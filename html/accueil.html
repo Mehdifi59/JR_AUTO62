@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/logo_jrauto.png">
+    <link rel="stylesheet" href="../css/styleAccueil.css">
+    <title>Accueil</title>
+
+</head>
+
+<body>
+
+<header class="header_nav">
+
+    <a href="accueil.html">
+    <img class="logo" src="../img/logo_jrauto.png" alt="">
+    </a>
+    <nav class="nav_bar">
+        <ul class="nav_links" id="nav_links">
+            <li><a href="accueil.html">Accueil</a></li>
+            <li><a href="nettoyage.html">Nettoyage</a></li>
+            <li><a href="mecanique.html">Mécanique</a></li>
+            <li><a href="solutionsAuto.html">Solution auto</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <img class="menu_hamburger" id="menu_hamburger" src="../img/menu_hambu.png" alt="menu hamburger">
+</header>
+
+
+
+
+<main>
+    <div class="text_accueil">
+        <p>Vous cherchez un garagiste compétent qui assure la réparation, le nettoyage et la reprogrammation de véhicules toutes marques ?</p>
+        <p><span class="letter_change">JR Auto</span>, votre garage automobile situé à <span class="letter_change"> Vendin-le-vieil(62) </span>. Nous sommes spécialisées dans la réparation de véhicules toutes marques, et effectue également le nettoyage de votre véhicule, vos reprogrammations, votre diagnostic électronique. Forts de notre expérience, nous vous assurons un travail professionnel et de qualité.
+        </p>
+    </div>
+
+    <div class="nettoyage">
+        <img src="../img/nettoyageHD.png" alt="">
+        <div class="description">
+            <p><span class="letter_change">Net</span>toyage</p>
+            <p>Notre service de nettoyage automobile offre des solutions pour le nettoyage intérieur, extérieur et combiné de votre voiture, pour un résultat impeccable. Nous proposons également un service de nettoyage extracteur pour éliminer en profondeur les taches et les odeurs tenaces de votre intérieur de voiture.</p>
+            <div class="button_nettoyage">
+                <a href="nettoyage.html">
+                <button> voir + </button>  
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="mecanique_container">
+        <img class="mecanique_img" src="../img/mecanique_remove.png" alt="">
+
+        <div class="description">
+            <p><span class="letter_change_blue">Méc</span>anique</p>
+            <p>Notre garage automobile propose une large gamme de services pour répondre à tous vos besoins en matière de réparation et d'entretien de voiture. Faites confiance à notre équipe de professionnels expérimentés pour prendre soin de votre véhicule et le maintenir en parfait état de fonctionnement.</p>
+
+            <div class="button_nettoyage">
+                <a href="mecanique.html">
+                <button> voir + </button>  
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="solutions_auto">
+        <img src="../img/diagnostique.png" alt="">
+
+
+        <div class="description">
+            <p><span class="letter_change">Sol</span>utions auto</p>
+            <p> Notre service de solutions automobiles vous offre des options pour améliorer les performances et l'efficacité de votre voiture, telles que la reprogrammation moteur, le FAP, EGR, adblueoff, ainsi que des codages d'options pour personnaliser votre véhicule selon vos préférences. </p>
+
+            <div class="button_nettoyage">
+                <a href="nettoyage.html">
+                <button> voir + </button>  
+                </a>
+            </div>
+        </div>        
+    </div>
+   
+</main>
+
+<footer class="footer_contain">
+    <i> Le garage JR Auto est à votre disposition pour plus d'informations.</i>
+    <div class="reseaux_sociaux">
+        <div class="fb_insta">
+            <a class="lien_footer" href="https://www.facebook.com/people/JR-Auto-5962/100089838115283/">
+            <ion-icon class="icon" name="logo-facebook"></ion-icon>
+            </a>
+
+            <a class="lien_footer" href="https://www.instagram.com/jrauto5962/">
+            <ion-icon class="icon"name="logo-instagram"></ion-icon>
+            </a>
+
+        </div>
+        <div class="telephone"> 
+            <ion-icon class="icon" name="call-outline"></ion-icon>
+            <p>0659721348</p>
+
+        </div>
+        <div class="snapchat">
+            <a class="lien_footer" href="https://www.snapchat.com/add/jrauto.5962?share_id=Cp9OH98N4bs&locale=fr-FR">
+            <ion-icon class="icon" name="logo-snapchat"></ion-icon>
+            </a>
+            <p>jrauto.5962</p>
+
+        </div>
+    </div>
+
+</footer>
+
+
+</body>
+<script>
+
+    const menuHamburger = document.querySelector("#menu_hamburger")
+    const navLinks = document.querySelector("#nav_links")
+
+    menuHamburger.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+    })
+</script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+</html>

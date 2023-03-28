@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+
+body{
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+    background: linear-gradient(45deg, rgb(34, 34, 34) 0%, rgb(59, 56, 56) 100%);
+    color: #E8E8E8;
+
+}
+
+
+body::-webkit-scrollbar {
+    width: .6em;
+
+}
+ 
+
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: #e7eaf6;
+  outline: 1px solid #a2a8d3;
+}
+
+
+ul{
+    list-style: none;
+}
+
+.logo{
+
+    width: 7vw;
+    padding: 10px;
+
+}
+
+.nav_bar{
+
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+
+}
+
+    
+ul a::after { 
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #F05454;
+    transition: width .3s;
+ }
+
+ ul a:hover::after{
+    width: 100%;
+    transition: width .3s;
+ }
+
+
+.header_nav{
+    background: #E8E8E8;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header_nav .menu_hamburger{
+    display: none;
+    width: 60px;
+    position: absolute;
+    right: 10px;
+    z-index: 2  ;
+}
+
+
+.nav_links{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    font-size: 1.2em;
+
+}
+
+@media screen and (max-width:1100px){
+
+    .nav_links{
+        gap: 3%;
+        font-size: 1em;
+    }
+
+    .logo{
+
+        width: 12vw;
+    }
+   
+
+    .text_accueil p{
+        font-size: 1em;
+    }
+    
+}
+
+
+@media screen and (max-width : 620px) {
+    
+    .header_nav .menu_hamburger{
+        display: block;
+        width: 50px;
+    }
+
+    .logo{
+        width: 25vw;
+    }
+
+    .nav_links{
+        display: none;
+        background-color: rgba(46, 79, 79, 0.521);
+        backdrop-filter: blur(8px);
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        flex-direction: column;
+        padding: 0  ;
+        left: 0px;
+        top: 0;
+        text-align: center;
+        font-size: 2em;
+    }
+    
+}
+
+
+
+.nav_links.mobile-menu {
+    display: flex;
+    margin: 0;
+    z-index: 2;
+    
+}
+
+.text_accueil{
+    text-align: center;
+    padding: 0 8% 0 8%;
+    font-size: 1.2em;
+    font-weight: 500;
+    margin: 10px;
+
+}
+
+.nettoyage{
+    width: 100%;    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.nettoyage img{
+    width: 40%;
+    height: 80%;
+}
+
+.services{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+.description{
+
+    width: 50%;
+    height: auto;
+    font-size: 1.1em;
+    padding: 10px;
+    color: #E8E8E8;
+    text-align: center;
+
+}
+
+
+.description p:nth-child(2){
+    padding: 0 8% 0 8%;
+    font-size: 1.2em;
+    font-weight: 550;
+}
+
+.description p:first-child{
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 5%;
+}
+.description p{
+    margin-top: 0;
+}
+
+.letter_change{
+    color: #ee2b47;
+    font-weight: 900;
+}
+
+.letter_change_blue{
+    color: #222831;
+    font-weight: 900;
+}
+
+
+.button_nettoyage{
+    text-align: center;
+}
+
+.button_nettoyage button{
+    
+
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    background: #ffffff;
+    color: #000000;
+    border-radius: 8px;
+    padding: 14px 24px 16px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1;
+    transition: transform 200ms,background 200ms;
+
+  
+}
+
+
+
+.button_nettoyage button:hover {
+    
+    transform: translateY(-2px);
+}
+
+
+
+@media screen and (max-width:1100px){
+
+    .text_accueil{
+        font-size: .9em;
+    }
+    
+    .description p:first-child{
+        font-size: 1.9em;
+    }
+
+    .description p:nth-child(2){
+        font-size: .8em;
+    }
+    
+    .button_nettoyage button{
+        font-size: .8em;
+    }
+
+    .nettoyage{
+        height: auto;
+    }
+
+}
+
+
+@media screen and (max-width : 620px) {
+    
+
+    .text_accueil{
+        font-size: 0.7em;
+    }
+
+    .description p:first-child{
+        font-size: 1em;
+    }
+
+    .description p:nth-child(2){
+        padding: 0 2% 0 2%;
+        font-size: .7em;
+        text-align: center;
+    }
+
+    .button_nettoyage button{
+        font-size: .9em;
+
+    }
+
+
+    .description{
+        padding: 3%;
+        width: 70%;
+    }
+
+    .nettoyage{
+        height: auto;
+        flex-direction: column;
+    }
+
+
+    .nettoyage img{
+        width: 75%;
+    }
+
+}
+
+
+
+
+.mecanique_container{
+    width: 100%;
+    background-color: #EE2B47;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.description_mecanique{
+    color: black;
+    padding: 0 5%;
+    text-align: center;
+}
+
+
+.description_mecanique p:first-child{
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 5%;
+}
+
+
+.description_mecanique p:nth-child(2){
+    font-size: 1.2em;
+    color: #233142;
+    font-weight: 600;
+}
+
+.mecanique_img{
+
+    width: 40%;
+    height: 80%;
+
+}
+  
+
+.solutions_auto{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.solutions_auto img{
+    width: 40%;
+    height: 80%;
+}
+
+
+.footer_contain{
+    background-color: #222831;
+}
+
+
+.footer_contain p{
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.footer_contain i{
+    text-align: center;
+    display: block;
+    font-size: 1.2em;
+    padding-top: 2%;
+}
+
+.icon{
+    font-size: 1.8em;
+    
+}
+
+.reseaux_sociaux{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.telephone{
+    display: flex;
+    align-items: center;
+}
+
+.snapchat{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    margin: 0;
+}
+
+.lien_footer{
+    text-decoration: none;
+    color:white;
+
+}
+
+
+@media screen and (max-width:1100px) {
+    .mecanique_container{
+        height: auto;
+    }
+
+    .icon{
+        font-size: 1.4em;
+    }
+    
+    .footer_contain p{
+        font-size: .9em;
+    }
+
+    .footer_contain i{
+        font-size: .9em;
+
+    }
+    
+}
+
+@media screen and (max-width:620px){
+    .mecanique_container{
+        flex-direction: column;
+    }
+
+    .mecanique_container img{
+
+        width: 75%;
+    }
+    .solutions_auto{
+        flex-direction: column;
+    }
+
+    .solutions_auto img{
+        width: 75%;
+    }
+
+    .icon{
+        font-size: 1em;
+    }
+    
+    .footer_contain p{
+        font-size: .6em;
+    }
+    .footer_contain i{
+        font-size: .6em;
+    }
+    
+}
+
+

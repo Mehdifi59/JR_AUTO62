@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styleContact.css">
+    <title>Contact</title>
+</head>
+<body>
+    <header class="header_nav">
+
+        <a href="accueil.html">
+        <img class="logo" src="../img/logo_jrauto.png" alt="">
+        </a>
+        <nav class="nav_bar">
+            <ul class="nav_links" id="nav_links">
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="nettoyage.html">Nettoyage</a></li>
+                <li><a href="mecanique.html">Mécanique</a></li>
+                <li><a href="solutionsAuto.html">Solution auto</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    
+        <img class="menu_hamburger" id="menu_hamburger" src="../img/menu_hambu.png" alt="menu hamburger">
+    </header>
+
+
+    <main>
+        <div class="formulaire_contain">
+
+            <div class="formulaire">
+                <div class="contact">
+                        
+                <div class="title">
+                    <h1>Nous contacter</h1>
+                </div>
+
+                    <form action="#" class="inputs_form">
+
+                        <div class="name">
+                            <input type="text" placeholder="Nom">
+                        </div>
+                        <div class="email">
+                            <input type="email" placeholder="adresse email">
+                        </div>
+                        <div class="message">
+                            <textarea name="msg" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                        </div>
+
+                        <div class="submit">
+                            <button>Envoyer</button>
+         
+                        </div>
+                        
+                    </form>
+                </div>
+
+                <div class="maps">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d323544.64167149056!2d2.9031468917158265!3d50.68853234579556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47dd47f081b71b3b%3A0xd6b8330053e4f3d5!2sJR%20AUTO!5e0!3m2!1sfr!2sfr!4v1678713850150!5m2!1sfr!2sfr"
+                    width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen data-aos="fade-left" data-aos-duration="3000"></iframe>
+
+                </div>
+
+
+        </div>
+
+
+    </main>
+
+    <footer class="footer_contain">
+        <i> Le garage JR Auto est à votre disposition pour plus d'informations.</i>
+        <div class="reseaux_sociaux">
+            <div class="fb_insta">
+                <a class="lien_footer" href="https://www.facebook.com/people/JR-Auto-5962/100089838115283/">
+                <ion-icon class="icon" name="logo-facebook"></ion-icon>
+                </a>
+
+                <a class="lien_footer" href="https://www.instagram.com/jrauto5962/">
+                <ion-icon class="icon"name="logo-instagram"></ion-icon>
+                </a>
+
+            </div>
+            <div class="telephone"> 
+                <ion-icon class="icon" name="call-outline"></ion-icon>
+                <p>0659721348</p>
+    
+            </div>
+            <div class="snapchat">
+                <a class="lien_footer" href="https://www.snapchat.com/add/jrauto.5962?share_id=Cp9OH98N4bs&locale=fr-FR">
+                <ion-icon class="icon" name="logo-snapchat"></ion-icon>
+                </a>
+                <p>jrauto.5962</p>
+    
+            </div>
+        </div>
+    
+    </footer>
+    
+    
+</body>
+
+
+<script>
+
+    const menuHamburger = document.querySelector("#menu_hamburger")
+    const navLinks = document.querySelector("#nav_links")
+
+    menuHamburger.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+    })
+</script>  
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</html>
